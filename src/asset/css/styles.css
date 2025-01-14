@@ -1,0 +1,139 @@
+/* section.con01 */
+.con01{position:relative; width: 100vw; height: 100vh;}
+.con01 .video_wrap video{position: absolute;left: 0;top: 0; width: 100vw; height: 100vh; object-fit: cover;}
+.con01 .title{position: absolute;left: 0;top: 50%;transform: translateY(-50%); width: 100%;text-align: center; color: #fff;}
+.con01 .title h2 {font-size: 80px; font-weight: 400; letter-spacing: -1px; line-height: 1.2;}
+
+
+
+
+/* section.con03 */
+.con03 {position: relative; margin-top: 200px; width: 100%; height: 100vh;}
+.con03 .text_wrap {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); z-index: 2; width: 70%;}
+.con03 .text_wrap .title {font-size: 18px;}
+.con03 .text_wrap ul li {font-size: 100px; line-height: 1.2;}
+.con03 .text_wrap ul li.en2 {padding-left: 5px;}
+
+/* readmore */
+.con03 .btn_wrap {position: absolute; right: -50%; top: 60%; z-index: 3;}
+.con03 .btn_wrap a { position: relative; display: block; width: 170px; height: 170px; border-radius: 100%; border: 2px solid #fff; box-sizing: border-box; transition: .5s;}
+.con03 .btn_wrap a img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(45deg); width: 22%;}
+.con03 .btn_wrap a img:nth-child(2) {opacity: 0;}
+.con03 .btn_wrap a::before{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 0; height: 0; border-radius: 100%; background: #fff url('/images/readMore3.png') no-repeat center/158px; animation-name: spin; -webkit-animation-name: spin; animation-duration: 10s; -webkit-animation-duration: 10s; animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; animation-timing-function: linear; -webkit-animation-timing-function: linear; transition: .4s;}
+.con03 .btn_wrap a:hover {border-color: transparent;}
+.con03 .btn_wrap a:hover img:nth-child(2){opacity: 1;}
+.con03 .btn_wrap a:hover::before{width: 100%; height: 100%;}
+
+/* simplyScroll */
+.simply-scroll .simply-scroll-clip {overflow: hidden; transform: rotate(5deg) translate(150%, 400px) scale(1.1); opacity: 0;}
+.simply-scroll .simply-scroll-clip .simply-scroll-list li {float: left; width: 400px; filter: brightness(50%);}
+.simply-scroll .simply-scroll-clip .simply-scroll-list li img {width: 100%;}
+
+/* simplyScroll.motion */
+.con03.motion .simply-scroll .simply-scroll-clip {transform: rotate(5deg) translate(0%, 400px) scale(1.1); opacity: 1; transition: 1.2s; transition-delay: 0.3s;}
+.con03.motion .btn_wrap {right: 50%; transition: 1.22s;} 
+.con03.motion .text_wrap ul li p {animation-name: textAni; animation-duration: 1.8s;}
+
+/* footer */
+footer {position: relative; width: 100%; height: 100vh;}
+footer .text_wrap {position: absolute; width: 100%; top: 30%; padding: 0 60px; box-sizing: border-box; font-size: 160px; line-height: 1;}
+footer .text_wrap .title {margin-bottom: 30px; padding-left: 15px; font-size: 20px;}
+footer .text_wrap .contact {margin-bottom: 10px;}
+footer .text_wrap a {display: block; margin-top: -30px;}
+footer .bottom {position: absolute; bottom: 5%; display: flex; justify-content: space-between; padding: 0 60px; width: 100%; box-sizing: border-box; font-size: 30px; letter-spacing: -1px;}
+footer .bottom .sns {display: flex;}
+footer .bottom .sns li {margin-right: 30px;}
+
+
+/* PC 1650px ~ 1301px  1400화면에서 확인*/
+@media screen and (max-width:1650px) {
+    .visual .svg_ani {top: 45%;}
+    .visual .sub_text {margin-left: 17%;}
+
+    .con03.motion .btn_wrap {right: 10%;}
+
+    footer .text_wrap a {font-size: 144px;}
+}
+
+@media screen and (max-width:1440px) {
+    .visual {padding-top: 100px;}
+    .visual .main_text {margin-bottom: 65px; font-size: 110px;}
+    .visual .svg_ani{top: 30%;}
+}
+
+/* 1300px ~ 1025px 1100화면에서 확인*/
+@media screen and (max-width:1300px) {
+    .visual .main_text {width: 100%; font-size: 11vw;}
+    .visual .sub_text {position: absolute; left: 0; bottom: 8%; margin-left: 0; padding: 0 5%; width: 100%; box-sizing: border-box;}
+    .visual .svg_ani {top: 47%;}
+
+    footer .text_wrap a {font-size: 122px;}
+}
+
+/* 1024px ~ 801px */
+@media screen and (max-width:1024px) {
+    .visual {padding-top: 100px;}
+    .visual .main_text{z-index: 1;}
+    .visual .svg_ani {top: 41%; width: 65%;}
+    .visual .sub_text {bottom: 2%; z-index: 1;}
+    .visual .scroll{right: 60px; left: initial; bottom: 25px;}
+
+    .con01 .title h2{font-size: 7vw;}
+    .con02 .title {font-size: 18vw;}
+    .con02 .work_list {width: 90%;}
+    .con03 .text_wrap{width: 85%;}
+    .con03 .text_wrap ul li {font-size: 9vw;}
+
+    footer .text_wrap {font-size: 12vw;}
+    footer .text_wrap a {font-size: 11vw;}
+    footer .bottom {font-size: 20px;}
+}
+
+/* 800px ~ 501px */
+@media screen and (max-width:800px) {
+    .wrap{font-size: 16px;}
+    
+
+    .visual .svg_ani {top: 43%; width: 85%; left: 12%;}
+    .visual .scroll {right: 18px; bottom: 18px;}
+
+    .con02 .work_list li {margin-top: 0; margin-bottom: 30px; width: 100%;}
+    .con02 .work_list li a .img_box::before {display: none;}
+    .con02 .work_list li a .img_box::after {display: none;}
+    .con02 .title .en2{font-size: 20vw;}
+    .con02 .work_list li a .text_box h3 {font-size: 28px;}
+
+    .con03 .btn_wrap a  {width: 90px; height: 90px;}
+    .con03 .btn_wrap a:hover  {border-color: #fff}
+    .con03 .btn_wrap a::before {display: none;}
+    .con03 .btn_wrap a img:nth-child(2) {display: none;}
+
+    .con03.motion .simply-scroll .simply-scroll-clip {transform: rotate(10deg) translate(20%, 400px) scale(1.2);}
+    .simply-scroll .simply-scroll-clip .simply-scroll-list li {width: 200px;}
+
+    footer {height: 50vh;}
+    footer .text_wrap {left: 50%; top: 50%; transform: translate(-50%, -50%); padding: 0; width: 90%;}
+    footer .text_wrap .title{padding-left: 0;}
+    footer .text_wrap .contact {margin-bottom: 40px;}
+}
+
+
+/* 500px ~ 401px */
+@media screen and (max-width:500px) {
+    br.mo {display: none;}
+    .visual {padding-top: 100px;}
+    .visual .main_text{margin: 0px 0px 150px 25px;}
+    .visual .svg_ani {left: -1%; top: 35%; width: 100%;}
+    .visual.motion .sub_text{bottom: 10%;}
+
+    .con03 .text_wrap ul li.en2 {padding-left: 10px;}
+
+    footer .bottom .sns li{margin-right: 10px;}
+    footer .bottom {padding: 0 40px; font-size: 17px;}
+}
+
+/* 400px ~ 301px */
+@media screen and (max-width:400px) {
+    .con03.motion .simply-scroll .simply-scroll-clip{transform: rotate(10deg) translate(20%, 300px) scale(1.2);}
+    footer .bottom {padding: 0 30px; font-size: 16px;}
+}

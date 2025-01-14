@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital@1&family=Noto+Sans+KR&family=Public+Sans&display=swap');
+
+/* 영어폰트 */
+.en{font-family: "Public Sans", sans-serif;}
+.en2{font-family: "Cormorant Infant", serif;}
+
+/* Layout */
+body {font-family: "Noto Sans KR", sans-serif; font-size: 16px; line-height: 1.6;}
+.wrap {position: relative; margin: 0 auto; overflow: hidden; background: #000; color: #fff;}
+
+
+/* 애니메이션 */
+/* @keyframes textAni {
+    0% {opacity: 0;}
+    30% {opacity: 0; transform: translate3d(0,-90px,0) skewY(-10deg); transform-origin: top left;}
+}
+@keyframes textani2 {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+} */
+
+@keyframes ani1 {
+    0% {stroke-dashoffset: 1373;}
+    100%{stroke-dashoffset: 0;}
+}
+@keyframes ani2 {
+    0% {stroke-dashoffset: 6700;}
+    100%{stroke-dashoffset: 0;}
+}
+@keyframes ani3 {
+    0% {stroke-dashoffset: 1864;}
+    100%{stroke-dashoffset: 0;}
+}
+@keyframes ani4 {
+    0% {stroke-dashoffset: 2368;}
+    100%{stroke-dashoffset: 0;}
+}
+@keyframes ani5 {
+    0% {stroke-dashoffset: 46;}
+    100%{stroke-dashoffset: 0;}
+}
+
+@-webkit-keyframes spin{
+    0% {transform: translate(-50%,-50%) rotate(0deg);}
+    100% {transform: translate(-50%,-50%) rotate(360deg);}
+}
+@keyframes spin{
+    0% {transform: translate(-50%,-50%) rotate(0deg);}
+    100% {transform: translate(-50%,-50%) rotate(360deg);}
+}

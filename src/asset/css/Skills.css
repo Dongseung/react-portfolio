@@ -1,0 +1,141 @@
+/* section.con03 */
+.con03 {
+  position: relative;
+  margin-top: 200px;
+  width: 100%;
+  height: 100vh;
+}
+
+.con03 .textWrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+}
+
+.con03 .textWrap .title {
+  font-size: 18px;
+}
+
+.con03 .textWrap ul li {
+  font-size: 100px;
+  line-height: 1.2;
+}
+
+.con03 .textWrap ul li.en2 {
+  padding-left: 5px;
+}
+
+/* Scroll Animation */
+.list {
+  display: flex;
+  align-items: center;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  transform: rotate(5deg) scale(1.1) translateY(200px);
+}
+
+.list li {
+  flex: 0 0 auto;
+  width: 400px;
+  filter: brightness(50%);
+  padding: 10px;
+}
+
+.list li img {
+  width: 100%;
+}
+
+/* readmore */
+.con03 .btnWrap {
+  position: absolute;
+  right: 10%;
+  top: 60%;
+  z-index: 3;
+}
+.con03 .btnWrap a {
+  position: relative;
+  display: block;
+  width: 170px;
+  height: 170px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.con03 .btnWrap a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 22%;
+}
+.con03 .btnWrap a img:nth-child(2) {
+  opacity: 0;
+}
+.con03 .btnWrap a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  background: #fff url("../images/readMore3.png") no-repeat center/158px;
+  animation-name: spin;
+  -webkit-animation-name: spin;
+  animation-duration: 10s;
+  -webkit-animation-duration: 10s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  transition: 0.4s;
+}
+.con03 .btnWrap a:hover {
+  border-color: transparent;
+}
+.con03 .btnWrap a:hover img:nth-child(2) {
+  opacity: 1;
+}
+.con03 .btnWrap a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/* PC 1650px ~ 1301px  1400화면에서 확인*/
+@media screen and (max-width:1650px) {
+    .con03 .btnWrap {right: 10%;}
+}
+
+
+/* 1024px ~ 801px */
+@media screen and (max-width:1024px) {
+    .con03 .textWrap{width: 85%;}
+    .con03 .textWrap ul li {font-size: 9vw;}
+}
+
+/* 800px ~ 501px */
+@media screen and (max-width:800px) {
+    .con03 .btnWrap a  {width: 90px; height: 90px;}
+    .con03 .btnWrap a:hover  {border-color: #fff}
+    .con03 .btnWrap a::before {display: none;}
+    .con03 .btnWrap a img:nth-child(2) {display: none;}
+
+    .con03 .list {transform: rotate(10deg) translateY(400px) scale(1.2);}
+    .con03 .list li {width: 200px;}
+}
+
+
+/* 500px ~ 401px */
+@media screen and (max-width:500px) {
+    .con03 .textWrap ul li.en2 {padding-left: 10px;}
+}
+
+/* 400px ~ 301px */
+@media screen and (max-width:400px) {
+    .con03 .list{transform: rotate(10deg) translateY(300px) scale(1.2);}
+}

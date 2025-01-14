@@ -1,0 +1,149 @@
+/* visual 영역 스타일 */
+.visual {
+    position: relative;
+    padding-top: 125px;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    letter-spacing: -1px;
+  }
+  
+  .visual .mainText {
+    display: inline-block;
+    margin: 0 0 150px 60px;
+    font-size: 140px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+  
+  .visual .mainText p {
+    overflow: hidden;
+  }
+  
+  .visual .subText {
+    margin-left: 20%;
+  }
+  
+  .visual .scroll {
+    position: fixed;
+    left: 60px;
+    bottom: 40px;
+  }
+  
+  .visual .svgAni {
+    position: absolute;
+    right: 2%;
+    top: 29%;
+    width: 50%;
+  }
+  
+  /* 애니메이션 */
+  .visual .mainText p span {
+    display: block;
+    animation-name: textAni;
+    animation-duration: 1.8s;
+  }
+  
+  .visual .mainText p:nth-child(2) span {
+    animation-duration: 1.7s;
+  }
+  
+  .visual .mainText p:nth-child(3) span {
+    animation-duration: 1.5s;
+  }
+  
+  .visual .subText {
+    animation-name: textani2;
+    animation-duration: 2.3s;
+  }
+  
+  /* svg 애니메이션 */
+  .animate-path {
+    animation: none; /* 초기화 */
+  }
+  
+  #svgAni01 {
+    stroke-dasharray: 1373;
+    stroke-dashoffset: -1373;
+    animation: ani1 0.9s linear 0.2s forwards;
+  }
+  
+  #svgAni02 {
+    stroke-dasharray: 6700;
+    stroke-dashoffset: 6700;
+    animation: ani2 1s linear 0.3s forwards;
+  }
+  
+  #svgAni03 {
+    stroke-dasharray: 1864;
+    stroke-dashoffset: 1864;
+    animation: ani3 1.1s linear 1s forwards;
+  }
+  
+  #svgAni04 {
+    stroke-dasharray: 2368;
+    stroke-dashoffset: 2368;
+    animation: ani4 1.2s linear 1.5s forwards;
+  }
+  
+  #svgAni05 {
+    stroke-dasharray: 46;
+    stroke-dashoffset: 46;
+    animation: ani5 0.4s linear 2.2s forwards;
+  }
+  
+  /* PC 1650px ~ 1301px  1400화면에서 확인*/
+@media screen and (max-width:1650px) {
+  .visual .svgAni {top: 45%;}
+  .visual .subText {margin-left: 17%;}
+
+  .con03.motion .btnWrap {right: 10%;}
+
+  footer .textWrap a {font-size: 144px;}
+}
+
+@media screen and (max-width:1440px) {
+  .visual {padding-top: 100px;}
+  .visual .mainText {margin-bottom: 65px; font-size: 110px;}
+  .visual .svgAni{top: 30%;}
+}
+
+/* 1300px ~ 1025px 1100화면에서 확인*/
+@media screen and (max-width:1300px) {
+  .visual .mainText {width: 100%; font-size: 11vw;}
+  .visual .subText {position: absolute; left: 0; bottom: 8%; margin-left: 0; padding: 0 5%; width: 100%; box-sizing: border-box;}
+  .visual .svgAni {top: 47%;}
+
+}
+
+/* 1024px ~ 801px */
+@media screen and (max-width:1024px) {
+  .visual {padding-top: 68px;}
+  .visual .mainText{z-index: 1; margin-left: 5%; font-size: 7vw;}
+  .visual .svgAni {top: 30%; width: 46%;}
+  .visual .subText {bottom: 2%; z-index: 1; font-size: 1.9vw;}
+  .visual .scroll{right: 20px; left: initial; bottom: 10px; font-size: 1.4vw;}
+}
+
+/* 800px ~ 501px */
+@media screen and (max-width:800px) {
+  .visual .svgAni {top: 43%; width: 85%; left: 12%;}
+  .visual .scroll {right: 18px; bottom: 18px;}
+
+}
+
+
+/* 500px ~ 401px */
+@media screen and (max-width:500px) {
+  br.mo {display: none;}
+  .visual {padding-top: 100px;}
+  .visual .mainText{margin: 0px 0px 150px 25px;}
+  .visual .svgAni {left: -1%; top: 35%; width: 100%;}
+  .visual .subText{bottom: 10%;}
+}
+
+/* 400px ~ 301px */
+/* @media screen and (max-width:400px) {
+  .con03.motion .simply-scroll .simply-scroll-clip{transform: rotate(10deg) translate(20%, 300px) scale(1.2);}
+  footer .bottom {padding: 0 30px; font-size: 16px;}
+} */
