@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 // import './App.css';
 import "./asset/css/reset.css";
 import "./asset/css/global.css";

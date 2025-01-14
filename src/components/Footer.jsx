@@ -16,10 +16,10 @@ const Footer = () => {
       <div class="bottom en">
         <ul class="sns">
           <li>
-            <a href="#">Facebook</a>
+            <a href="/" aria-label="페이스북 계정 연결">Facebook</a>
           </li>
           <li>
-            <a href="#">Instagram</a>
+            <a href="/" aria-label="인스타그램 계정 연결">Instagram</a>
           </li>
         </ul>
         <p class="copyright">DS.shin &#169;2024</p>

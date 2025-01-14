@@ -36,23 +36,23 @@ const Header = () => {
       <nav className="gnb en">
         <ul>
           <li>
-            <a href="#" data-splitting>
+            <a href="/" aria-label="About영역 이동" data-splitting>
               About
             </a>
           </li>
           <li>
-            <a href="#" data-splitting>
+            <a href="/" aria-label="Work영역 이동" data-splitting>
               Work
             </a>
           </li>
           <li>
-            <a href="#" data-splitting>
+            <a href="/" aria-label="Contact영역 이동" data-splitting>
               Contact
             </a>
           </li>
         </ul>
       </nav>
-      <a href="#" className="menuOpen">
+      <a href="/" className="menuOpen">
         <span className="a"></span>
         <span className="b"></span>
       </a>
