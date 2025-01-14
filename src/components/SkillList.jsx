@@ -124,7 +124,7 @@ const SkillList = () => {
         <li><img src="/images/img7.jpg" alt="Skill 7" /></li> */}
       </ul>
       <div className="btnWrap">
-        <a href="#">
+        <a href="/">
           <img src="/images/readMore1.png" alt="Read More 1" />
           <img src="/images/readMore2.png" alt="Read More 2" />
         </a>
