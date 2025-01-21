@@ -114,7 +114,7 @@
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
   transition: 0.4s;
-  z-index: 0;
+  z-index: 1;
 }
 
 /* hover */

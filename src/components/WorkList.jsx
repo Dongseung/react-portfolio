@@ -29,7 +29,6 @@ const WorkList = ({ data }) => {
                 scrub:1,
             }
         })
-        .to('.imgBox', { opacity: 1, zIndex: 2, ease: 'none', duration: 5 })
         .to('.wrap', {backgroundColor:'#000', color:'#fff', ease:'none', duration:5}, 0)
     
         //title 글자 position:fixed 적용
