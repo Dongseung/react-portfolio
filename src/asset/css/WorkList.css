@@ -114,7 +114,7 @@
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear;
   transition: 0.4s;
-  z-index: 1;
+  z-index: 0;
 }
 
 /* hover */
@@ -141,5 +141,5 @@
   .con02 .workList li a .imgBox::before {display: none;}
   .con02 .workList li a .imgBox::after {display: none;}
   .con02 .title .en2{font-size: 20vw;}
-  .con02 .workList li a .text_box h3 {font-size: 28px;}
+  .con02 .workList li a .textBox h3 {font-size: 28px;}
 }
