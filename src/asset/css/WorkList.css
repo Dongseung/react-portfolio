@@ -138,8 +138,8 @@
 /* 800px ~ 501px */
 @media screen and (max-width:800px) {
   .con02 .workList li {margin-top: 0; margin-bottom: 30px; width: 100%;}
-  .con02 .workList li a .img_box::before {display: none;}
-  .con02 .workList li a .img_box::after {display: none;}
+  .con02 .workList li a .imgBox::before {display: none;}
+  .con02 .workList li a .imgBox::after {display: none;}
   .con02 .title .en2{font-size: 20vw;}
   .con02 .workList li a .text_box h3 {font-size: 28px;}
 }
