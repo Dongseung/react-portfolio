@@ -136,10 +136,10 @@
 /* 500px ~ 401px */
 @media screen and (max-width:500px) {
   br.mo {display: none;}
-  .visual {padding-top: 100px;}
-  .visual .mainText{margin: 0px 0px 150px 25px;}
+  .visual {padding-top: 70px;}
+  .visual .mainText{margin: 0px 0px 150px 25px; font-size: 9vw;}
   .visual .svgAni {left: -1%; top: 35%; width: 100%;}
-  .visual .subText{bottom: 10%;}
+  .visual .subText{bottom: 10%; font-size: 3.5vw;}
 }
 
 /* 400px ~ 301px */
